@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <style>
+       #left
+{
+  padding:10px;
+  float: left;
+  width: 50%;
+}
+#right
+{
+   padding:20px;
+   float: right;
+   width: 45%;
+}
+.hid{
+    display: none;;
+}
+.grey{
+  background-color:#e0e0e0;;
+}
+.blue{
+  background-color:#3E00FF;
+  color:white;
+}
+.left{
+  float:right;
+}
+.h1{
+    background-color:#1E6F5C;
+       color:white;
+}
+   </style>
+</head>
+<body>
+    <h1 class="h1">Discussion Portal</h1>
+    <div id="left">
+        <button id="new_ques_form_btn" class="blue">New Question Form</button>
+        <input id="ques_serch" type="text" placeholder="serch question">
+        <div id="div_ques_show" class="grey"></div>
+    </div>
+    <div id="right">
+        <div id="ques_enter">
+            <h1>Welcome to Discussion Portal!</h1>
+            <h3>Enter a subject and question to get started</h3>
+            <input id="ques_sub" placeholder="Subject" type="text">
+            <textarea id="ques_type" placeholder="Question"  cols="30" rows="10"></textarea>
+            <button id="ques_sub_btn" class="blue left">Submit</button>
+        </div>
+        <div id="ques_show" class="hid">
+            <h2>Question</h2>
+            <div id="ques_show_right" class="grey"></div>
+            <button id="resolve_btn" class="blue left">resolve</button>
+            
+            <div id="resp_show">
+                <h2>Response</h2>
+                <div id="resp_show_area" class="grey"></div>
+            </div>
+
+            <div id="resp">
+                <h2>Add Respose</h2>
+                <input id="name" placeholder="Enter Name" type="text">
+                <textarea id="area" placeholder="Enter Comment"  cols="30" rows="10"></textarea>
+                <button id="resp_btn" class="blue left">Submit</button>
+            </div>
+        </div>
+    </div>
+<script src="index.js"></script>
+</body>
+</html>
